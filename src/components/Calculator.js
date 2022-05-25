@@ -13,13 +13,13 @@ export default class myComponent extends React.Component {
         <div className="calc-buttons">
           <div className="cell calc-result">0</div>
           <div className="cell calc-ac">AC</div>
-          <div className="cell calc-plus-minus">+-</div>
+          <div className="cell calc-plus-minus">+/-</div>
           <div className="cell calc-mode">%</div>
-          <div className="cell calc-division">/</div>
+          <div className="cell calc-division">÷</div>
           <div className="cell calc-seven">7</div>
           <div className="cell calc-eight">8</div>
           <div className="cell calc-nine">9</div>
-          <div className="cell calc-multiply">*</div>
+          <div className="cell calc-multiply">×</div>
           <div className="cell calc-four">4</div>
           <div className="cell calc-five">5</div>
           <div className="cell calc-six">6</div>

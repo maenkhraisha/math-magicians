@@ -4,7 +4,7 @@
 
 # Math Magicians
 
-> This application use React framework to show a calculator.
+> This application use React framework to implement a calculator function.
 
 ## Built With
 
