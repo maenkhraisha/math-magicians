@@ -20,9 +20,7 @@
 ## Live Demo 
 
 Go to live demo : 
-https://maenkhraisha.github.io/JavaScript-Capstone/
-
-![portfolio](./src/img/Capture.PNG)
+Comming Soon
 
 ## out resourse
 
