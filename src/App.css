@@ -25,8 +25,9 @@
   grid-column: 1/-1;
   background-color: #858694;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: right;
+  height: 3rem;
 }
 
 .calc-ac,

@@ -1,76 +1,45 @@
 import React from 'react';
 import '../App.css';
-import oprate from './operate';
+import calc from './logic/calculate';
 
-export default class myComponent extends React.Component {
+export default class calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstNumber: '',
-      secondNumber: '',
-      operation: '',
-      result: '0',
+      total: null,
+      next: null,
+      operation: null,
     };
     this.CalculatorHandler = this.CalculatorHandler.bind(this);
-    this.AcHandler = this.AcHandler.bind(this);
-    this.ResultHandler = this.ResultHandler.bind(this);
   }
 
-  CalculatorHandler(value) {
-    const {
-      firstNumber, operation,
-    } = this.state;
-
-    if ((value === '+' || value === '-' || value === '×' || value === '÷' || value === '%')
-              && firstNumber !== '') {
-      this.setState(() => ({ operation: value }), () => {
-        this.setState((prevState) => ({ result: prevState.firstNumber + prevState.operation }),
-          () => { });
-      });
-    } else if (operation === '') {
-      this.setState((prevState) => ({ firstNumber: prevState.firstNumber + value }), () => {
-        this.setState((prevState) => ({ result: prevState.firstNumber }), () => {
-        });
-      });
-    } else if (operation !== '' && firstNumber !== '') {
-      this.setState((prevState) => ({ secondNumber: prevState.secondNumber + value }), () => {
-        this.setState((prevState) => (
-          { result: prevState.firstNumber + prevState.operation + prevState.secondNumber }),
-        () => { });
-      });
-    }
+  setTotal(totalr) {
+    this.setState({ total: totalr });
   }
 
-  AcHandler() {
-    this.setState(
-      {
-        firstNumber: '', secondNumber: '', operation: '', result: '0',
-      },
-    );
-  }
-
-  ResultHandler() {
-    const res = oprate.readEqual(this.state);
-    this.setState(() => ({ result: res }), () => {
-    });
-
-    this.setState(
-      {
-        firstNumber: '', secondNumber: '', operation: '',
-      },
-    );
+  CalculatorHandler(buttonName) {
+    const result = calc(this.state, buttonName);
+    this.setState(() => ({
+      total: result.total,
+      next: result.next,
+      operation: result.operation,
+    }));
   }
 
   render() {
-    const { result } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div className="calc-container">
         <div className="calc-buttons">
-          <div className="cell calc-result">{result}</div>
-          <button type="button" className="button calc-ac" onClick={this.AcHandler}>
+          <div className="cell calc-result">
+            {total}
+            {operation}
+            {next}
+          </div>
+          <button type="button" className="button calc-ac" onClick={() => this.CalculatorHandler('AC')}>
             <div className="cell">AC</div>
           </button>
-          <button type="button" className="button calc-plus-minus" onClick={() => this.CalculatorHandler('+-')}>
+          <button type="button" className="button calc-plus-minus" onClick={() => this.CalculatorHandler('+/-')}>
             <div className="cell">+/-</div>
           </button>
           <button type="button" className="button calc-mode" onClick={() => this.CalculatorHandler('%')}>
@@ -88,8 +57,8 @@ export default class myComponent extends React.Component {
           <button type="button" className="button calc-nine" onClick={() => this.CalculatorHandler('9')}>
             <div className="cell">9</div>
           </button>
-          <button type="button" className="button calc-multiply" onClick={() => this.CalculatorHandler('×')}>
-            <div className="cell">×</div>
+          <button type="button" className="button calc-multiply" onClick={() => this.CalculatorHandler('x')}>
+            <div className="cell">x</div>
           </button>
           <button type="button" className="button calc-four" onClick={() => this.CalculatorHandler('4')}>
             <div className="cell">4</div>
@@ -121,7 +90,7 @@ export default class myComponent extends React.Component {
           <button type="button" className="button calc-dot" onClick={() => this.CalculatorHandler('.')}>
             <div className="cell">.</div>
           </button>
-          <button type="button" className="button calc-equal" onClick={this.ResultHandler}>
+          <button type="button" className="button calc-equal" onClick={() => this.CalculatorHandler('=')}>
             <div className="cell">=</div>
           </button>
         </div>
