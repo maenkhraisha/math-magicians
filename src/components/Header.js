@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
   <>
-    <h1>Math Magicians</h1>
-    <li><Link to="/">Home</Link></li>
-    <li><Link to="/Quote">Quote</Link></li>
-    <li><Link to="/Calculator">Calculator</Link></li>
+    <div className="header">
+      <h1 className="header-title">Math Magicians</h1>
+      <ul className="header-nav">
+        <li><Link className="header-nav-item" to="/">Home</Link></li>
+        <span> | </span>
+        <li><Link className="header-nav-item" to="/Quote">Quote</Link></li>
+        <span> | </span>
+        <li><Link className="header-nav-item" to="/Calculator">Calculator</Link></li>
+      </ul>
+    </div>
   </>
 );
 

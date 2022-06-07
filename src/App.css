@@ -1,7 +1,47 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Geaneral Styling */
+li {
+  list-style: none;
+}
+/* Application Styling */
 .App {
   text-align: center;
   padding: 0;
   margin: 0;
+  background-color: #f1f1f1;
+  background-color: #f1f1f1;
+  background-image: radial-gradient(#c1c1d1 1px, transparent 1px);
+  background-size: 15px 15px;
+  background-color: #d1e3ea;
+  height: 100vh;
+}
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+}
+
+.header-title {
+  align-self: center;
+  margin-left: 0.5rem;
+}
+
+.header-nav {
+  display: flex;
+  align-self: center;
+  gap: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.header-nav-item {
+  color: blue;
+  font-size: large;
+  text-decoration: none;
 }
 
 .calc-buttons {
