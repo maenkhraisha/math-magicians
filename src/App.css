@@ -3,22 +3,22 @@
   padding: 0;
   margin: 0;
 }
+
 /* Geaneral Styling */
 li {
   list-style: none;
 }
+
 /* Application Styling */
 .App {
   text-align: center;
-  padding: 0;
-  margin: 0;
-  background-color: #f1f1f1;
+  padding: 2rem;
   background-color: #f1f1f1;
   background-image: radial-gradient(#c1c1d1 1px, transparent 1px);
   background-size: 15px 15px;
-  background-color: #d1e3ea;
   height: 100vh;
 }
+
 /* Header Styling */
 .header {
   display: flex;
@@ -44,6 +44,8 @@ li {
   text-decoration: none;
 }
 
+/* Calculator Component */
+
 .calc-buttons {
   display: -ms-grid;
   display: grid;
@@ -57,7 +59,7 @@ li {
 }
 
 .cell {
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: 2rem;
 }
 
@@ -67,7 +69,8 @@ li {
   color: white;
   font-size: 3rem;
   text-align: right;
-  height: 3rem;
+  padding-right: 0.5rem;
+  height: 4rem;
 }
 
 .calc-ac,
@@ -98,3 +101,24 @@ li {
 .calc-equal {
   background-color: #f5913e;
 }
+
+/* *************** */
+
+/* Calculator Page */
+
+/* *************** */
+.calculator-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator-component {
+  border: 3px solid black;
+  width: 60vw;
+}
+
+/* *************** */
+
+/* *** Home Page ***/
+
+/* *************** */

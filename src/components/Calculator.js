@@ -31,7 +31,7 @@ export default class calculator extends React.Component {
     return (
       <div className="calc-container">
         <div className="calc-buttons">
-          <div className="cell calc-result">
+          <div className="calc-result">
             {total}
             {operation}
             {next}

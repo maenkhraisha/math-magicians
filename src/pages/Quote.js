@@ -2,7 +2,10 @@ import React from 'react';
 
 const Quote = () => (
   <div>
-    <h1>Quote Page</h1>
+    <h2>
+      Mathmatics is not about numbers, equations, computations,
+      or algorithms: it is about understanding. -William Paul Thurston
+    </h2>
   </div>
 );
 export default Quote;
