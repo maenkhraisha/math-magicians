@@ -122,3 +122,10 @@ li {
 /* *** Home Page ***/
 
 /* *************** */
+.home-page {
+  text-align: left;
+}
+
+.home-page > p {
+  margin-top: 1.5rem;
+}
