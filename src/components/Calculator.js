@@ -1,30 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 import calc from './logic/calculate';
 
-export default class calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.CalculatorHandler = this.CalculatorHandler.bind(this);
-  }
+const calculator = () => {
+  const [total, setTotal] = useState(0);
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
 
-  setTotal(totalr) {
-    this.setState({ total: totalr });
-  }
+  const CalculatorHandler = (buttonName) => {
+    const { total: newTotal, next: newNext, operation: newOperation } = calc(
+      { total, next, operation },
+      buttonName,
+    );
 
-  CalculatorHandler(buttonName) {
-    const result = calc(this.state, buttonName);
-    this.setState(() => ({
-      total: result.total,
-      next: result.next,
-      operation: result.operation,
-    }));
-  }
+    setTotal(newTotal);
+    setNext(newNext);
+    setOperation(newOperation);
+  };
 
   render() {
     const { total, next, operation } = this.state;
@@ -93,8 +85,9 @@ export default class calculator extends React.Component {
           <button type="button" className="button calc-equal" onClick={() => this.CalculatorHandler('=')}>
             <div className="cell">=</div>
           </button>
-        </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default calculator;
