@@ -21,7 +21,7 @@ const calculator = () => {
   return (
     <div className="calc-container">
       <div className="calc-buttons">
-        <div className="cell calc-result">
+        <div className="calc-result">
           {total}
           {operation}
           {next}
