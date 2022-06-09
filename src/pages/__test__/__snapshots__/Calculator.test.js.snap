@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="calculator-page"
+>
+  <h2>
+    Let’s do some math!
+  </h2>
+  <div
+    className="calculator-component"
+  >
+    <div
+      className="calc-container"
+    >
+      <div
+        className="calc-buttons"
+      >
+        <div
+          className="calc-result"
+          data-testid="result"
+        >
+          0
+        </div>
+        <button
+          className="button calc-ac"
+          data-testid="ac"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+            AC
+          </div>
+        </button>
+        <button
+          className="button calc-plus-minus"
+          data-testid="plus-minus"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+            +/-
+          </div>
+        </button>
+        <button
+          className="button calc-mode"
+          data-testid="mod"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+            %
+          </div>
+        </button>
+        <button
+          className="button calc-division"
+          data-testid="division"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell "
+          >
+            ÷
+          </div>
+        </button>
+        <button
+          className="button calc-seven"
+          data-testid="no-seven"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             7 
+          </div>
+        </button>
+        <button
+          className="button calc-eight"
+          data-testid="no-eight"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             8 
+          </div>
+        </button>
+        <button
+          className="button calc-nine"
+          data-testid="no-nine"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             9 
+          </div>
+        </button>
+        <button
+          className="button calc-multiply"
+          data-testid="multi"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             x 
+          </div>
+        </button>
+        <button
+          className="button calc-four"
+          data-testid="no-four"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             4 
+          </div>
+        </button>
+        <button
+          className="button calc-five"
+          data-testid="no-five"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             5 
+          </div>
+        </button>
+        <button
+          className="button calc-six"
+          data-testid="no-six"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             6 
+          </div>
+        </button>
+        <button
+          className="button calc-minus"
+          data-testid="minus"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             - 
+          </div>
+        </button>
+        <button
+          className="button calc-one"
+          data-testid="no-one"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             1 
+          </div>
+        </button>
+        <button
+          className="button calc-two"
+          data-testid="no-two"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             2 
+          </div>
+        </button>
+        <button
+          className="button calc-three"
+          data-testid="no-three"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             3 
+          </div>
+        </button>
+        <button
+          className="button calc-plus"
+          data-testid="plus"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             + 
+          </div>
+        </button>
+        <button
+          className="button calc-zero"
+          data-testid="no-zero"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             0 
+          </div>
+        </button>
+        <button
+          className="button calc-dot"
+          data-testid="dot"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+             . 
+          </div>
+        </button>
+        <button
+          className="button calc-equal"
+          data-testid="equal"
+          onClick={[Function]}
+          type="button"
+        >
+          <div
+            className="cell"
+          >
+            = 
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
