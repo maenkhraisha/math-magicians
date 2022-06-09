@@ -49,7 +49,11 @@ VScode
 - Twitter: [@twitterhandle](https://twitter.com/AlkhryshaM)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ma-en-mohammad-303930100/)
 
+👤 **Hammad Siddique**
 
+- GitHub: [@HammadSiddique](https://github.com/HammadSiddique)
+- Twitter: [@hs_devv](https://twitter.com/hs_devv)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hammad-siddique-6a5469231/)
 
 ## 🤝 Contributing
 
