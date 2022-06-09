@@ -15,9 +15,3 @@ test("test when first press 0", () => {
     expect(result.textContent).toBe('0');
 });
 
-// test("test when first press 5", () => {
-//     const {getByTestId } = render(<Calculator />);
-//     const result = getByTestId('result');
-
-//     expect(result.textContent).toBe('5');
-// });
