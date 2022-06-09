@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => (
-  <>
+function Header() {
+  return (
     <div className="header">
       <h1 className="header-title">Math Magicians</h1>
       <ul className="header-nav">
@@ -13,7 +13,7 @@ const Header = () => (
         <li><Link className="header-nav-item" to="/Calculator">Calculator</Link></li>
       </ul>
     </div>
-  </>
-);
+  );
+}
 
 export default Header;
