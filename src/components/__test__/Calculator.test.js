@@ -49,3 +49,60 @@ test('When you minus 6-4 result should be 2', () => {
 
   expect(result.textContent).toBe('2');
 });
+
+test('When you multi 12 * 11 result should be 132', () => {
+  const { getByTestId } = render(<Calculator />);
+  const result = getByTestId('result');
+  const one = getByTestId('no-one');
+  const two = getByTestId('no-two');
+  const multi = getByTestId('multi');
+  const equal = getByTestId('equal');
+
+  fireEvent.click(one);
+  fireEvent.click(two);
+  fireEvent.click(multi);
+  fireEvent.click(one);
+  fireEvent.click(one);
+  fireEvent.click(equal);
+
+  expect(result.textContent).toBe('132');
+});
+
+test('When you multi 50 / 5 result should be 10', () => {
+  const { getByTestId } = render(<Calculator />);
+  const result = getByTestId('result');
+  const five = getByTestId('no-five');
+  const zero = getByTestId('no-zero');
+  const division = getByTestId('division');
+  const equal = getByTestId('equal');
+
+  fireEvent.click(five);
+  fireEvent.click(zero);
+  fireEvent.click(division);
+  fireEvent.click(five);
+  fireEvent.click(equal);
+
+  expect(result.textContent).toBe('10');
+});
+
+
+
+test('When you add -18 + 8 result should be 10', () => {
+  const { getByTestId } = render(<Calculator />);
+  const result = getByTestId('result');
+  const one = getByTestId('no-one');
+  const eight = getByTestId('no-eight');
+  const plus = getByTestId('plus');
+  const plusMinus = getByTestId('plus-minus')
+  const equal = getByTestId('equal');
+
+  
+  fireEvent.click(one);
+  fireEvent.click(eight);
+  fireEvent.click(plusMinus);
+  fireEvent.click(plus);  
+  fireEvent.click(eight); 
+  fireEvent.click(equal);
+
+  expect(result.textContent).toBe('-10');
+});
