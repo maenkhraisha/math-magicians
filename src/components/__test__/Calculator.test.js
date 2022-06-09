@@ -85,23 +85,20 @@ test('When you multi 50 / 5 result should be 10', () => {
   expect(result.textContent).toBe('10');
 });
 
-
-
 test('When you add -18 + 8 result should be 10', () => {
   const { getByTestId } = render(<Calculator />);
   const result = getByTestId('result');
   const one = getByTestId('no-one');
   const eight = getByTestId('no-eight');
   const plus = getByTestId('plus');
-  const plusMinus = getByTestId('plus-minus')
+  const plusMinus = getByTestId('plus-minus');
   const equal = getByTestId('equal');
 
-  
   fireEvent.click(one);
   fireEvent.click(eight);
   fireEvent.click(plusMinus);
-  fireEvent.click(plus);  
-  fireEvent.click(eight); 
+  fireEvent.click(plus);
+  fireEvent.click(eight);
   fireEvent.click(equal);
 
   expect(result.textContent).toBe('-10');
