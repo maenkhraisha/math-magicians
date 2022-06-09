@@ -24,6 +24,7 @@ exports[`renders correctly 1`] = `
         </div>
         <button
           className="button calc-ac"
+          data-testid="ac"
           onClick={[Function]}
           type="button"
         >
@@ -35,6 +36,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-plus-minus"
+          data-testid="plus-minus"
           onClick={[Function]}
           type="button"
         >
@@ -46,6 +48,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-mode"
+          data-testid="mod"
           onClick={[Function]}
           type="button"
         >
@@ -57,6 +60,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-division"
+          data-testid="division"
           onClick={[Function]}
           type="button"
         >
@@ -68,6 +72,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-seven"
+          data-testid="no-seven"
           onClick={[Function]}
           type="button"
         >
@@ -79,6 +84,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-eight"
+          data-testid="no-eight"
           onClick={[Function]}
           type="button"
         >
@@ -90,6 +96,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-nine"
+          data-testid="no-nine"
           onClick={[Function]}
           type="button"
         >
@@ -101,6 +108,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-multiply"
+          data-testid="multi"
           onClick={[Function]}
           type="button"
         >
@@ -112,6 +120,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-four"
+          data-testid="no-four"
           onClick={[Function]}
           type="button"
         >
@@ -123,6 +132,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-five"
+          data-testid="no-five"
           onClick={[Function]}
           type="button"
         >
@@ -134,6 +144,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-six"
+          data-testid="no-six"
           onClick={[Function]}
           type="button"
         >
@@ -145,6 +156,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-minus"
+          data-testid="minus"
           onClick={[Function]}
           type="button"
         >
@@ -156,6 +168,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-one"
+          data-testid="no-one"
           onClick={[Function]}
           type="button"
         >
@@ -167,6 +180,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-two"
+          data-testid="no-two"
           onClick={[Function]}
           type="button"
         >
@@ -178,6 +192,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-three"
+          data-testid="no-three"
           onClick={[Function]}
           type="button"
         >
@@ -189,6 +204,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-plus"
+          data-testid="plus"
           onClick={[Function]}
           type="button"
         >
@@ -212,6 +228,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-dot"
+          data-testid="dot"
           onClick={[Function]}
           type="button"
         >
@@ -223,6 +240,7 @@ exports[`renders correctly 1`] = `
         </button>
         <button
           className="button calc-equal"
+          data-testid="equal"
           onClick={[Function]}
           type="button"
         >
