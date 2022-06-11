@@ -20,7 +20,8 @@
 ## Live Demo 
 
 Go to live demo : 
-Comming Soon
+https://math-magician-maen.herokuapp.com/
+https://whimsical-babka-bc002b.netlify.app/
 
 ## out resourse
 
